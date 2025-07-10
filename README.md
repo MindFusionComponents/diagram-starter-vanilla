@@ -8,7 +8,7 @@ as a playground to explore the diagramming API.
 
 Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/MindFusionComponents/diagram-starter-vanilla
    ```
 
 ## Getting Started

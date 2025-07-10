@@ -1,0 +1,13 @@
+{
+  "name": "diagram-starter-vanilla",
+  "version": "1.0.0",
+  "description": "A simple web server to run the diagram starter.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^8.4.0"
+  }
+}

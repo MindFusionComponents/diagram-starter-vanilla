@@ -4,6 +4,7 @@ var DiagramView = MindFusion.Diagramming.DiagramView;
 var Diagram = MindFusion.Diagramming.Diagram;
 var GlassEffect = MindFusion.Diagramming.GlassEffect;
 var Style = MindFusion.Diagramming.Style;
+var PathFinder = MindFusion.Diagramming.PathFinder;
 
 var Rect = MindFusion.Drawing.Rect;
 
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	zoomer.target = diagramView;
 	zoomer.borderColor = "#5a79a5";
 
-	// create an Ruler component that shows measurement scales and allows aligning nodes
+	// create a Ruler component that shows measurement scales and allows aligning nodes
 	var ruler = MindFusion.Diagramming.Ruler.create(document.getElementById("ruler"));
 	ruler.diagramView = diagramView;
 	ruler.backColor = "#fff";
@@ -71,7 +72,40 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("newButton").addEventListener("click", onNewClick);
 	document.getElementById("saveButton").addEventListener("click", onSaveClick);
 	document.getElementById("loadButton").addEventListener("click", onLoadClick);
+
+	// detect user's actions by handling diagram events, such as nodeCreated
+	diagram.nodeCreated.addEventListener(
+		(sender, args) =>
+		{
+			console.log("user has created a node");
+			args.node.brush = "lightblue";
+		});
+
+	// validation events let us prevent users' actions; for example,
+	// onLinkCreating handler below prevents users from drawing a cycle
+	diagram.linkCreating.addEventListener(onLinkCreating);
 });
+
+function onLinkCreating(diagram, args)
+{
+    if (args.destination == null)
+    {
+        // not pointing to a node yet
+        return;
+    }
+
+    var pathFinder = new PathFinder(diagram);
+    var path = pathFinder.findShortestPath(
+        args.destination, args.origin);
+
+    if (path != null)
+    {
+        // adding this new link would create a cycle
+        // [origin]--[dest]--[path internal nodes]--[origin]
+
+        args.cancel = true;
+    }
+}
 
 function initPalette(palette)
 {

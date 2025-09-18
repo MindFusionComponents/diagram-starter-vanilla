@@ -19,7 +19,7 @@ the more restricted security context.
 
 ## Documentation
 
-[MindFusion.Diagramming Online Documentation](https://mindfusion.dev/docs/javascript/diagramming/Getting_Started_10.htm)
+[MindFusion.Diagramming Documentation](https://mindfusion.dev/docs/javascript/diagramming/Getting_Started_10.htm)
 
 ## MindFusion.Diagramming License
 
@@ -27,7 +27,7 @@ Use for free in exchange for a link back to [https://mindfusion.dev/](https://mi
 
 For commercial use and dedicated technical support see:
 
-[Pricing (perpetual license for current version)](https://mindfusion.dev/buy-javascript-diagram.html) 
+[Pricing (perpetual license for current version)](https://mindfusion.dev/buy-javascript-diagram.html)  
 [License agreement](https://mindfusion.dev/eula.html)
 
 ## Technical Support

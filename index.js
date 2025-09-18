@@ -1,4 +1,4 @@
-﻿/// <reference path="JsDiagram-vsdoc.js" />
+﻿
 
 var DiagramView = MindFusion.Diagramming.DiagramView;
 var Diagram = MindFusion.Diagramming.Diagram;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// users can also draw on the canvas using mouse or other pointing devices, as
 	// specified via DiagramView.behavior property;
 	var palette = MindFusion.Diagramming.Controls.Palette.create(document.getElementById("palette"));
-	palette.padding = 2;
+	//palette.padding = 2;
 	palette.captionFont = new MindFusion.Drawing.Font("sans-serif", 3);
 	palette.setTop("200px");
 	palette.setWidth("200px");
@@ -110,10 +110,10 @@ function onLinkCreating(diagram, args)
 function initPalette(palette)
 {
 	// stock shape geometries are listed here:
-	// https://www.mindfusion.eu/onlinehelp/jsdiagram/CC_refTable_of_Predefined_Shapes_4.htm
+	// https://mindfusion.dev/docs/javascript/diagramming/CC_refTable_of_Predefined_Shapes_4.htm
 
 	// use the shape designer tool to draw custom shape geometries:
-	// https://mindfusion.eu/tools/shape-designer.html
+	// https://mindfusion.dev/tools/shape-designer.html
 
 	// apart from ShapeNode, you could also add TableNode or ContainerNode objects
 

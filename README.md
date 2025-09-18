@@ -1,6 +1,6 @@
 ## About The Project
 
-A template project showing how to configure [MindFusion.Diagramming](https://mindfusion.eu/javascript-diagram.html) 
+A template project showing how to configure [MindFusion.Diagramming](https://mindfusion.dev/javascript-diagram.html) 
 for vanilla HTML + JavaScript development, (without relying on any UI Frameworks). You could also use it 
 as a playground to explore the diagramming API.
 
@@ -19,19 +19,19 @@ the more restricted security context.
 
 ## Documentation
 
-[MindFusion.Diagramming Online Documentation](https://www.mindfusion.eu/onlinehelp/jsdiagram/Getting_Started_10.htm)
+[MindFusion.Diagramming Online Documentation](https://mindfusion.dev/docs/javascript/diagramming/Getting_Started_10.htm)
 
 ## MindFusion.Diagramming License
 
-Use for free in exchange for a link back to [https://mindfusion.eu](https://mindfusion.eu) (configuration shown in project).
+Use for free in exchange for a link back to [https://mindfusion.dev/](https://mindfusion.dev/) (configuration shown in project).
 
 For commercial use and dedicated technical support see:
 
-[Pricing (perpetual license for current version)](https://mindfusion.eu/buy-javascript-diagram.html)  
-[License agreement](https://mindfusion.eu/eula.html)
+[Pricing (perpetual license for current version)](https://mindfusion.dev/buy-javascript-diagram.html)
+[License agreement](https://mindfusion.dev/eula.html)
 
 ## Technical Support
 
-* email to support address at our domain
-* [MindFusion Forums](https://mindfusion.eu/Forum/YaBB.pl?board=jsdiag_disc)
-* [HelpDesk / Ticketing](https://mindfusion.eu/HelpDesk/index.php)
+* email to support@mindfusion.eu
+* [MindFusion Forums](https://mindfusion.dev/Forum/YaBB.pl?board=jsdiag_disc)
+* [HelpDesk / Ticketing](https://mindfusion.dev/HelpDesk/index.php)

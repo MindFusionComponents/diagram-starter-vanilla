@@ -14,7 +14,7 @@ Clone the repo
 ## Getting Started
 
 You can open index.html directly from the file system, add code to index.js, and reload the page
-to see the effect of your changes. Optionally run 'npm start' to start a simple web server, and avoid
+to see the effect of your changes. Optionally run 'npm install' and 'npm start' to start a simple web server, and avoid
 the more restricted security context.
 
 ## Documentation
